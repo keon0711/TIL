@@ -1,8 +1,6 @@
 # Union-Find
 
-Section: 알고리즘
-
-## Union-Find
+## Union-Find란
 
 - Union-Find 연산은 서로소 집합을 다루는 알고리즘
 - 크루스칼 알고리즘을 구현할 때 두 노드가 사이클을 이루는지 확인할 수 있다
