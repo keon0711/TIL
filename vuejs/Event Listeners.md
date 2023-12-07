@@ -1,0 +1,3 @@
+- `v-on:click="clickEvent";` 으로 click event라는 이벤트 함수를 매핑할 수 있다.
+- `v-on:`를  `@`로 대치할 수 있다.
+	- `v-on:click="clickEvent";` == `@click="clickEvent"`
