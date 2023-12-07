@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vuejs/데이터 바인딩.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vuejs/데이터 바인딩.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vuejs/데이터 바인딩.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vuejs/데이터 바인딩.md"
+                "file": "README.md"
               }
             }
           }
@@ -173,6 +173,8 @@
   },
   "active": "c8812395e1c56056",
   "lastOpenFiles": [
+    "vuejs/데이터 바인딩.md",
+    "README.md",
     "Spring/SOLID.md",
     "Spring/IoC, DI, 컨테이너.md",
     "OOP/OOP_instruction.md",
@@ -192,7 +194,6 @@
     "Git",
     "Algorithm",
     "스프링 핵심 원리 - 기본편/무제 파일.md",
-    "vuejs/데이터 바인딩.md",
     "books/한 권으로 읽는 컴퓨터 구조와 프로그래밍/4장 컴퓨터 내부 구조.md",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
@@ -210,7 +211,6 @@
     "스프링 핵심 원리 - 기본편/SOLID.md",
     "스프링 핵심 원리 - 기본편/무제 파일 1.md",
     "books/그림으로 공부하는 TCP IP 구조/2. 물리 계층.md",
-    "books/한 권으로 읽는 컴퓨터 구조와 프로그래밍/1장 컴퓨터 내부의 언어 체계.md",
     "Attached file/Pasted image 20231016194454.png"
   ]
 }
