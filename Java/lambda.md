@@ -15,7 +15,6 @@
 ```java
 (parameter1, parameter2, ...) -> { 코드 실행 };
 ```
-
 <br>
 
 ## 메소드를 전달하는 방식의 발전
@@ -62,7 +61,32 @@ private List<Fruit> filterFruits(List<Fruit> fruits, Predicate<Fruit> fruitFilte
 ```
 
 <br>
+## 활용 예시
+### 람다 표현식을 활용한 최대 힙
+람다 표현식을 활용해 아래와 같이 구현할 수 있다.
+```java
+Queue<Integer> q = new PriorityQueue<>(  
+        (a, b) -> b - a  
+);
 
+Queue<Integer> q = new PriorityQueue<>(  
+        (a, b) -> a > b ? -1 : 1
+);
+```
+사실 Comparator의 reverseOrder() 메서드를 사용해 더 간단하게 구현할 수 있다.
+```java
+Queue<Integer> q = new PriorityQueue<>(Collections.reverseOrder());
+```
+### 람다 표현식을 활용해 임의의 우선순위 지정
+값이 아닌 객체를 비교할 때는 아래와 같이 람다 표현식으로 기준을 정할 수 있다.
+아래 코드는 배열의 첫번째 요소가 작은 값을, 첫번째 요소가 같다면 두번째 요소 중 큰 값을 우선으로 하겠다는 의미이다.
+```java
+Queue<int[]> q = new PriorityQueue<>(  
+        (a, b) -> a[0] != b[0] ? b[0] - a[0] : a[1] - b[1]  
+);
+```
+
+<br>
 ## 각주
 (1) 자바에서 함수는 변수로 할당되거나, 파라미터로 전달할 수 없다. (2급 시민)
 
