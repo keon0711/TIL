@@ -1,3 +1,4 @@
+## comparing
 Comparator의 comparing 메서드를 활용하면 정렬을 보다 쉽게 구현할 수 있다.
 
 ```java
