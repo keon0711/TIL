@@ -1,4 +1,3 @@
-림
 ## 기존의 null 처리
 - 자바에서 NullPointerException을 줄이기 위해 null 확인 코드를 추가해야 한다.
 - 그러나 null 확인에 의해 코드의 들여쓰기 수준이 증가하거나, 너무 많은 출구가 생겨 유지보수가 어려워진다.
@@ -63,5 +62,10 @@ Optional<String> name = optInsurance.map(Insrance::getName);
 - 즉, `getInsurance`메서드가 `Optional<Insurance>`를 반환함에도 `optCar.flatMap(Car::getInsurance)`의 결과는 `Optional<Optional<Insurance>>`가 아니라 `Optional<Insurance>`가 된다.
 
 ## Optional 언랩
-- `get()`은 가장 간단하면서, 가장 안전하지 않은 메서드이다. 래핑된 값이 없을 경우 `NoSuchElementException`을 발생시킨다. 따라서 Optional에 값이 반드시 존재한다고 생각할 때만 사용이 권장된다. 결국 중첩된 null 확인 코드를 넣는 상황과 크게 다르지 않다.
-- `orElse(T other)`을 사용하면 Optional이 값을 가지지 않을 때 기본값을 제공할 수 있다.
+### `get()`
+`get()`은 가장 간단하면서, 가장 안전하지 않은 메서드이다. 래핑된 값이 없을 경우 `NoSuchElementException`을 발생시킨다. 따라서 Optional에 값이 반드시 존재한다고 생각할 때만 사용이 권장된다. 결국 중첩된 null 확인 코드를 넣는 상황과 크게 다르지 않다.
+### `orElse(T other)`
+`orElse(T other)`을 사용하면 Optional이 값을 가지지 않을 때 기본값을 제공할 수 있다.
+### `ifPresent()`
+`ifPresent()`는 옵셔널이 값을 포함하면 true를 리턴한다.
+`ifPresent(Consumer<T> block))`으로 값이 존재하면 전달된 `Consumer`를 실행한다. ([[함수형 인터페이스#Consumer]])
