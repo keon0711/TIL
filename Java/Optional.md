@@ -50,7 +50,7 @@ public class Insurance {
 
 ### 맵으로 Optional 값 추출&변환
 ```java
-Optional<Insurance> optInsurance = Optional.foNullable(insurance);
+Optional<Insurance> optInsurance = Optional.ofNullable(insurance);
 Optional<String> name = optInsurance.map(Insrance::getName);
 ```
 - Optional의 map 메서드는 스트림의 map 메서드와 개념적으로 비슷하다. Optional 객체를 최대 요소 개수가 1개 이하인 데이터 컬렉션으로 생각할 수 있다.
