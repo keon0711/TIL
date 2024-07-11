@@ -1,5 +1,6 @@
 charsyam@naver.com
 
+## Redis
 - In-Memory Cache
 - In-Memory DB
 - 디스크보다 메모리가 빨라서 사용
