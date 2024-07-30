@@ -11,4 +11,4 @@
 - Access Tocken은 Client가 Resource에 접근할 때 사용
 
 ## OAuth 동작 원리
-![[Pasted image 20240527113726.png]]
+![[../attached-file/Pasted image 20240527113726.png]]
