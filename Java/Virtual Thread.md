@@ -10,10 +10,11 @@
 - 운영 체제가 제공하는 스케줄러를 사용하여 스레드를 관리하며, 우선순위와 스케줄링 정책은 OS에 의해 결정
 - 플랫폼 스레드를 효율적으로 사용하기 위해 Thread Pool을 사용
 
-![[../attached-file/Pasted image 20240724185853.png]]
+![Pasted image 20240724185853](../attached-file/Pasted%20image%2020240724185853.png)
+
 > https://tech.kakaopay.com/post/ro-spring-virtual-thread/
 ## Thread Pool
-![[../attached-file/Pasted image 20240724190158.png]]
+![Pasted image 20240724190158](../attached-file/Pasted%20image%2020240724190158.png)
 > 이미지 출처 : Introduction to Thread Pools in Java . (2023). 
 > www.baeldung.com/thread-pool-java-and-guava._  
 
@@ -33,8 +34,8 @@
 - 기존 스레드 구조를 그대로 사용
 - 짧은 context switching 시간 (ns 단위)
 - 전통적인 스레드가 Stack에 미리 할당된 메모리를 사용하는 것과 달리, **필요시 마다 Heap 메모리 사용**
-
-![[../attached-file/Pasted image 20240724185912.png]]
+t
+![Pasted image 20240724185912](../attached-file/Pasted%20image%2020240724185912.png)
 > https://tech.kakaopay.com/post/ro-spring-virtual-thread/
 
 
