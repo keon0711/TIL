@@ -1,4 +1,3 @@
-# TDD
 ## JUnit vs AssertJ
 ### 가독성
 - JUnit의 `assertEquals(a, b)`메서드는 인자가 두 개라 어떤 값이 실제 값이고, 예상 값인지 알기 어렵다.
