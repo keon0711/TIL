@@ -27,10 +27,9 @@ def union(x, y):
 
 ```python
 def find(x):
-    if root[x] == x:
-        return x
+    if root[x] != x:
+	    # 재귀적으로 탐색하면서 root 값을 최상위 부모노드로 수정
+        root[x] = find(root[x])
 		
-		# 재귀적으로 탐색하면서 root 값을 최상위 부모노드로 수정
-    root[x] = find(root[x])
     return root[x]
 ```
