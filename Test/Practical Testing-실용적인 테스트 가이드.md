@@ -6,7 +6,6 @@
 - Presentation Layer는 `@WebMvcTest` 로 테스트할 수 있다.
 - 이 때 Service Layer는 `@MockBean`으로 주입하자
 
-
 ### `@Transactional`
 - CQRS (Command and Query Responsibility Segregation)
 	- Read와 CUD 를 구분하자!
@@ -15,6 +14,7 @@
 - `readOnly = true`를 사용하면 Entity Manager가 1차 캐시에 스냅샷을 저장하거나, 더티체킹을 하는 오버헤드를 방지할 수 있다.
 > ✅ 클래스 레벨에 `@Transactional(readOnly = true)`를 추가하고 CUD 동작을 하는 메서드에 `@Transactional`를 추가하자
 - 메일 전송과 같이 긴 작업이 있는 서비스에서는 트랜잭션을 걸지 않는게 좋다.
+
 
 ## Test Double
 Test Double은 소프트웨어 테스트에서 실제 객체 대신 사용되는 가짜 객체를 의미한다.
